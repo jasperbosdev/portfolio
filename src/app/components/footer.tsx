@@ -2,7 +2,10 @@ import Image from "next/image";
 
 export default function Footer() {
     return (
-        <div className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+        <div className="row-start-3 flex gap-6 flex-wrap items-center justify-center w-full">
+            <div className="w-full">
+                <hr className="w-full border-neutral-400" />
+            </div>
             <a
                 className="flex items-center gap-2 hover:underline hover:underline-offset-4"
                 href="https://github.com/leeuwz"
