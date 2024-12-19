@@ -14,9 +14,23 @@
   }
 } */
 
+:root {
+  --background-color: rgb(255, 255, 255);
+  --grid-stroke : rgb(255, 0, 255);
+}
+
+html.dark {
+  --background-color: rgb(4, 4, 4);
+  --grid-stroke : rgb(50, 50, 50);
+  color: #fff;
+}
+
 html {
   transition: background-color 0.3s, color 0.3s;
-  transition: color 0.3s, color 0.3s;
+}
+
+p {
+  transition: background-color 0.3s, color 0.3s;
 }
 
 body {
@@ -24,4 +38,19 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   transition: background-color 0.3s, color 0.3s;
+}
+
+img {
+  transition: filter 1s;
+}
+
+/* ///////////////////////////////////// */
+/* WEBSITE BACKGROUND STYLING */
+/* //////////////////////////////////// */
+.bg-grid {
+  background-image: url('/light-grid.svg');
+}
+
+html.dark .bg-grid {
+  background-image: url('/dark-grid.svg');
 }
