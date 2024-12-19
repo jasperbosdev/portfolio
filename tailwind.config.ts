@@ -8,6 +8,17 @@ export default {
   ],
   theme: {
     extend: {
+      animation: {
+        ["infinite-slider"]: "infiniteSlider 25s linear infinite",
+      },
+      keyframes: {
+        infiniteSlider: {
+          "0%": { transform: "translateX(0)" },
+          "100%": {
+            transform: "translateX(-100%) translateX(-100%)",
+          },
+        },
+      },
       colors: {
         // Default colors from NextUI for background and foreground
         background: "var(--nextui-colors-background)", // Background color (light/dark)
