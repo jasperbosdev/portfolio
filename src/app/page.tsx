@@ -2,6 +2,7 @@ import Image from "next/image";
 import Navbar from "./components/navigation/navbar";
 import Footer from "./components/navigation/footer";
 import Introduction from "./components/introduction/Introduction";
+import AboutGrid from "./components/introduction/AboutGrid";
 import Grid from "./components/etc/grid";
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
         <Navbar />
         <div className="flex-col flex py-20 gap-20 w-full">
           <Introduction />
-          <div className="">hoi</div>
+          <AboutGrid />
         </div>
         <Footer />
       </div>
