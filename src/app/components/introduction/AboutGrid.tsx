@@ -25,7 +25,7 @@ export default function AboutGrid() {
                         <div className="dark:invert dark:group-hover:invert-0 group-hover:invert">
                             <Image
                               src="/github-cat.svg"
-                              alt="github icon"
+                              alt="icon"
                               width={24}
                               height={24}
                               priority
@@ -45,19 +45,28 @@ export default function AboutGrid() {
                         style={{
                             backgroundImage: "url('/pop.jpg')",
                             backgroundSize: "cover",
-                            backgroundPositionX: "right",
-                            backgroundPositionY: "bottom",
+                            backgroundPosition: "center",
                         }}
                     ></div>
-                    <div className="relative z-10 flex flex-col justify-between">
+                    <div className="relative z-10 flex flex-col justify-between h-full">
+                        <div className="dark:invert dark:group-hover:invert-0 group-hover:invert">
+                            <Image
+                              src="/linkedin.svg"
+                              alt="icon"
+                              width={24}
+                              height={24}
+                              priority
+                            />
+                        </div>
                         <div>
-                            <p className="text-lg font-bold dark:text-white text-black dark:text-white">Wdj</p>
-                            <p className="font-medium dark:text-white text-black dark:text-white">geen idee</p>
+                            <p className="text-lg font-bold dark:text-white text-black dark:text-white">Idk</p>
+                            <p className="font-medium dark:text-white text-black dark:text-white">Idk</p>
                         </div>
                     </div>
                 </div>
-                <div className="flex col-span-3 w-full h-[144px] rounded-2xl text-center justify-start text-start items-end px-4 py-3 relative
-                transition-all duration-500 will-change-[outline,_transform] group-hover:scale-[.97] hover:scale-[.97] active:scale-100">
+                <div className="flex col-span-3 w-full h-[144px] rounded-2xl text-center justify-start text-start items-end px-4 py-3 relative cursor-pointer
+                transition-all duration-500 will-change-[outline,_transform] group-hover:scale-[.97] hover:scale-[.97] active:scale-100"
+                    onClick={() => router.push('/about')}>
                     <div
                         className="absolute inset-0 rounded-2xl blur-[2px] dark:opacity-60 opacity-80"
                         style={{
@@ -66,10 +75,19 @@ export default function AboutGrid() {
                             backgroundPosition: "center",
                         }}
                     ></div>
-                    <div className="relative z-10 flex flex-col justify-between">
+                    <div className="relative z-10 flex flex-col justify-between h-full">
+                        <div className="dark:invert dark:group-hover:invert-0 group-hover:invert">
+                            <Image
+                              src="/user-card.svg"
+                              alt="icon"
+                              width={26}
+                              height={26}
+                              priority
+                            />
+                        </div>
                         <div>
-                            <p className="text-lg font-bold dark:text-white text-black dark:text-white">Hallo</p>
-                            <p className="font-medium dark:text-white text-black dark:text-white">Dit ben ik</p>
+                            <p className="text-lg font-bold dark:text-white text-black dark:text-white">About</p>
+                            <p className="font-medium dark:text-white text-black dark:text-white">Leer mij beter kennen</p>
                         </div>
                     </div>
                 </div>
