@@ -6,7 +6,7 @@
       height="50"
       patternUnits="userSpaceOnUse"
     >
-      <path d="M 0 50 L 50 50 L 50 0" fill="none" stroke="#111" stroke-width="1" />
+      <path d="M 0 50 L 50 50 L 50 0" fill="none" stroke="#222" stroke-width="1" />
     </pattern>
   </defs>
   <!-- Apply the grid pattern -->
