@@ -71,7 +71,7 @@ const TransparentImageWithOutline: React.FC<TransparentImageWithOutlineProps> = 
     };
   }, [src]);
 
-  return <canvas ref={canvasRef} className="dark:invert-0" style={{ display: "block", width: "200px", height: "auto" }} />;
+  return <canvas ref={canvasRef} className="block w-[200px] hidden sm:flex dark:invert-0" style={{ height: "auto" }} />;
 };
 
 export default TransparentImageWithOutline;
