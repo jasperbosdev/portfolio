@@ -1,13 +1,13 @@
 export default function Grid() {
     return (
         <div
-            className="bg-grid absolute w-full h-full z-[-50]"
+            className="bg-grid fixed inset-0 z-[-50]"
             style={{
-              backgroundSize: "200px",
-              backgroundRepeat: "repeat",
-              backgroundColor: "var(--background-color)",
+                backgroundSize: "200px",
+                backgroundRepeat: "repeat",
+                backgroundColor: "var(--background-color)",
             }}
             data-theme="light"
         />
-    )
+    );
 }
