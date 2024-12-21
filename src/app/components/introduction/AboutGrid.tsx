@@ -9,8 +9,8 @@ export default function AboutGrid() {
     
     return (
         <div>
-            <div className="grid grid-cols-4 gap-3 md:grid-cols-10 w-full">
-                <div className="flex col-span-5 w-full h-[144px] rounded-2xl text-center justify-start text-start items-end px-4 py-3 relative cursor-pointer
+            <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 w-full">
+                <div className="flex col-span-2 md:col-span-2 sm:col-span-full w-full h-[100px] sm:h-[144px] rounded-2xl text-center justify-start text-start items-end px-4 py-3 relative cursor-pointer
                 transition-all duration-500 will-change-[outline,_transform] group-hover:scale-[.97] hover:scale-[.97] active:scale-100"
                     onClick={() => router.push('/projects')}>
                     <div
@@ -32,18 +32,18 @@ export default function AboutGrid() {
                             />
                         </div>
                         <div>
-                            <p className="text-lg font-bold dark:text-white text-black dark:text-white">Projects</p>
+                            <p className="text-base sm:text-lg font-bold dark:text-white text-black dark:text-white">Projects</p>
                             <p className="font-medium dark:text-white text-black dark:text-white">Bekijk wat van mijn experimenten</p>
                         </div>
                     </div>
                 </div>
-                <div className="flex col-span-2 w-full h-[144px] rounded-2xl text-center justify-start text-start items-end px-4 py-3 relative cursor-pointer
+                <div className="flex col-span-full md:col-span-1 sm:col-span-2 w-full h-[100px] sm:h-[144px] rounded-2xl text-center justify-start text-start items-end px-4 py-3 relative cursor-pointer
                 transition-all duration-500 will-change-[outline,_transform] group-hover:scale-[.97] hover:scale-[.97] active:scale-100"
-                    onClick={() => router.push('#/')}>
+                    onClick={() => router.push('/cv')}>
                     <div
                         className="absolute inset-0 rounded-2xl blur-[2px] dark:opacity-60 opacity-80"
                         style={{
-                            backgroundImage: "url('/pop.jpg')",
+                            backgroundImage: "url('/cathai.jpg')",
                             backgroundSize: "cover",
                             backgroundPosition: "center",
                         }}
@@ -51,7 +51,7 @@ export default function AboutGrid() {
                     <div className="relative z-10 flex flex-col justify-between h-full">
                         <div className="dark:invert dark:group-hover:invert-0 group-hover:invert">
                             <Image
-                              src="/linkedin.svg"
+                              src="/throphy.svg"
                               alt="icon"
                               width={24}
                               height={24}
@@ -59,12 +59,12 @@ export default function AboutGrid() {
                             />
                         </div>
                         <div>
-                            <p className="text-lg font-bold dark:text-white text-black dark:text-white">Idk</p>
-                            <p className="font-medium dark:text-white text-black dark:text-white">Idk</p>
+                            <p className="text-base sm:text-lg font-bold dark:text-white text-black dark:text-white">CV</p>
+                            <p className="font-medium dark:text-white text-black dark:text-white">Bekijk mijn cv</p>
                         </div>
                     </div>
                 </div>
-                <div className="flex col-span-3 w-full h-[144px] rounded-2xl text-center justify-start text-start items-end px-4 py-3 relative cursor-pointer
+                <div className="flex col-span-full md:col-span-1 sm:col-span-2 w-full h-[100px] sm:h-[144px] rounded-2xl text-center justify-start text-start items-end px-4 py-3 relative cursor-pointer
                 transition-all duration-500 will-change-[outline,_transform] group-hover:scale-[.97] hover:scale-[.97] active:scale-100"
                     onClick={() => router.push('/about')}>
                     <div
@@ -86,12 +86,12 @@ export default function AboutGrid() {
                             />
                         </div>
                         <div>
-                            <p className="text-lg font-bold dark:text-white text-black dark:text-white">About</p>
+                            <p className="text-base sm:text-lg font-bold dark:text-white text-black dark:text-white">About</p>
                             <p className="font-medium dark:text-white text-black dark:text-white">Leer mij beter kennen</p>
                         </div>
                     </div>
                 </div>
-                <div className="flex col-span-10 h-[52px] rounded-2xl text-center justify-center items-center">
+                <div className="flex col-span-full h-[52px] rounded-2xl text-center justify-center items-center">
                     <CodeIcons />
                 </div>
             </div>
