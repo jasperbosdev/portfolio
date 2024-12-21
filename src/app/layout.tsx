@@ -1,7 +1,7 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import CommandBar from "./components/navigation/commandbar";
+// import CommandBar from "./components/navigation/commandbar";
 import router from "next/router";
 import { NextUIProvider } from "@nextui-org/react";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
