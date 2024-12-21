@@ -34,12 +34,12 @@ export default function Introduction() {
     }, []);
 
     return (
-        <div className="flex flex-row sm:items-start w-full">
-            <div className="flex flex-row gap-8 items-center justify-between w-full relative">
+        <div className="flex flex-col sm:flex-row sm:items-start w-full">
+            <div className="flex flex-col sm:flex-row gap-8 items-center justify-between w-full relative">
                 <GlowSm />
-                <div className="text-xl text-black dark:text-white">
+                <div className="text-xl text-black dark:text-white text-center sm:text-start">
                     <p className="text-neutral-600 dark:text-neutral-300 font-medium">👋 Hallo, mijn naam is</p>
-                    <p className="text-7xl font-bold">Jasper Bos,</p>
+                    <p className="text-5xl sm:text-7xl font-bold">Jasper Bos,</p>
                     <p className="text-sm text-neutral-600 dark:text-neutral-300 font-semibold">
                         <span id="dateTime" /> • Groningen, Nederland
                     </p>
