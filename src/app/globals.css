@@ -27,6 +27,7 @@ html.dark {
 
 html {
   transition: background-color 0.3s, color 0.3s;
+  overflow: auto; /* or overflow-y: scroll; */
 }
 
 p {
